@@ -24,14 +24,12 @@ We propose an end-to-end framework that learns a direct mapping from multi-view 
 ### 4D whole-heart mesh in scanner space
 
 <p align="center">
-  <img src="source/beating_heart_case1.gif" alt="Reconstructed 4D whole-heart mesh, case 1" width="100%">
-  <br>
-  <img src="source/beating_heart_case2.gif" alt="Reconstructed 4D whole-heart mesh, case 2" width="100%">
+  <img src="source/beating_heart.gif" alt="Reconstructed 4D whole-heart mesh" width="100%">
   <br>
   <em>(If the GIFs fail to display, please open them directly in <a href="source"><code>source/</code></a>.)</em>
 </p>
 
-Each animation shows one cardiac cycle and has three panels:
+The animation shows one cardiac cycle and has three panels:
 - **Multi-view cine MRI + mesh cut:** the cine MRI planes with the cross-sections of the reconstructed mesh.
 - **4D contour:** the mesh contours on all imaging planes.
 - **4D mesh:** the reconstructed whole-heart mesh.
@@ -41,9 +39,7 @@ The camera is fixed, so the motion you see is the heart beating in scanner space
 ### Contour agreement with the ground-truth segmentation
 
 <p align="center">
-  <img src="source/contours_2dt_case1.gif" alt="Ground-truth segmentation vs predicted contours, case 1" width="100%">
-  <br>
-  <img src="source/contours_2dt_case2.gif" alt="Ground-truth segmentation vs predicted contours, case 2" width="100%">
+  <img src="source/contours_2dt.gif" alt="Ground-truth segmentation vs predicted contours" width="100%">
 </p>
 
 The reconstructed mesh is cut by each acquired cine MRI plane: 2CH, 3CH, 4CH, and basal, mid-ventricular and apical short-axis slices. The resulting contours (bottom row) are compared over the whole cardiac cycle with the ground-truth segmentation of the same images (top row).
